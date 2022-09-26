@@ -1,0 +1,34 @@
+mysql:
+  driver: mysql
+  ip: 101.43.112.97
+  user: lfzserver
+  password: lfz123
+  dbname: bullet_screen
+  port: 3306
+
+redis:
+  address: 101.43.112.97:6379
+  password: lfz123
+  db: 1
+  poolsize: 100
+
+appmode:
+  mode: debug
+  port: :8081
+
+jwt:
+  jwt_key: 63162b97-d3b8-49fa-b8fa-235b4c07d108
+  expires_time: 604800
+  buffer_time: 86400
+  issuer: Lfz
+
+zap:
+  level: debug
+  prefix: [Lfz-bulleScreen]
+  format: json
+  director: log
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  max-age: 30
+  show-line: true
+  log-in-console: true
